@@ -1,0 +1,29 @@
+GET http://localhost:3500/MetodePengolahanPP
+
+###
+GET http://localhost:3500/DEVMetodePengolahanPP
+
+###
+GET http://localhost:3500/MetodePengolahanPP/2
+
+###
+POST http://localhost:3500/MetodePengolahanPP
+Content-Type: application/json
+
+{
+    "nama_metodepengolahanpp": "coba req no 4",
+    "status": true
+}
+
+###
+PATCH http://localhost:3500/MetodePengolahanPP/2
+Content-Type: application/json
+
+{
+    "nama_metodepengolahanpp": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/MetodePengolahanPP/2
+

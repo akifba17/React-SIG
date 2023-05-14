@@ -1,0 +1,29 @@
+GET http://localhost:3500/JenisProduk
+
+###
+GET http://localhost:3500/DEVJenisProduk
+
+###
+GET http://localhost:3500/JenisProduk/2
+
+###
+POST http://localhost:3500/JenisProduk
+Content-Type: application/json
+
+{
+    "nama_jenisProduk": "coba req no 4",
+    "status": true
+}
+
+###
+PATCH http://localhost:3500/JenisProduk/2
+Content-Type: application/json
+
+{
+    "nama_jenisProduk": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/JenisProduk/2
+

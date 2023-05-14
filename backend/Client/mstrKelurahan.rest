@@ -1,0 +1,29 @@
+GET http://localhost:3500/Kelurahan
+
+###
+GET http://localhost:3500/DEVKelurahan
+
+###
+GET http://localhost:3500/Kelurahan/2
+
+###
+POST http://localhost:3500/Kelurahan
+Content-Type: application/json
+
+{
+    "nama_kelurahan": "coba req no 4",
+    "status": true
+}
+
+###
+PATCH http://localhost:3500/Kelurahan/2
+Content-Type: application/json
+
+{
+    "nama_kelurahan": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/Kelurahan/2
+

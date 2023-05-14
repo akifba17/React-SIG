@@ -1,0 +1,29 @@
+GET http://localhost:3500/MetodeSeduh
+
+###
+GET http://localhost:3500/DEVMetodeSeduh
+
+###
+GET http://localhost:3500/MetodeSeduh/2
+
+###
+POST http://localhost:3500/MetodeSeduh
+Content-Type: application/json
+
+{
+    "nama_metodeseduh": "coba req no 4",
+    "status": true
+}
+
+###
+PATCH http://localhost:3500/MetodeSeduh/2
+Content-Type: application/json
+
+{
+    "nama_metodeseduh": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/MetodeSeduh/2
+

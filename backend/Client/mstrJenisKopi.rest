@@ -1,0 +1,28 @@
+GET http://localhost:3500/JenisKopi
+
+###
+GET http://localhost:3500/DEVJenisKopi
+
+###
+GET http://localhost:3500/JenisKopi/2
+
+###
+POST http://localhost:3500/JenisKopi
+Content-Type: application/json
+
+{
+    "nama_jeniskopi": "coba req no 4"
+}
+
+###
+PATCH http://localhost:3500/JenisKopi/3
+Content-Type: application/json
+
+{
+    "nama_jeniskopi": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/JenisKopi/2
+

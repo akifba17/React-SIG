@@ -1,0 +1,29 @@
+GET http://localhost:3500/JenisUsaha
+
+###
+GET http://localhost:3500/DEVJenisUsaha
+
+###
+GET http://localhost:3500/JenisUsaha/2
+
+###
+POST http://localhost:3500/JenisUsaha
+Content-Type: application/json
+
+{
+    "nama_jenisusaha": "coba req no 4",
+    "status": true
+}
+
+###
+PATCH http://localhost:3500/JenisUsaha/3
+Content-Type: application/json
+
+{
+    "nama_jenisusaha": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/JenisUsaha/3
+

@@ -1,0 +1,29 @@
+GET http://localhost:3500/MetodeRoasting
+
+###
+GET http://localhost:3500/DEVMetodeRoasting
+
+###
+GET http://localhost:3500/MetodeRoasting/3
+
+###
+POST http://localhost:3500/MetodeRoasting
+Content-Type: application/json
+
+{
+    "nama_metoderoasting": "coba req no 4",
+    "status": true
+}
+
+###
+PATCH http://localhost:3500/MetodeRoasting/3
+Content-Type: application/json
+
+{
+    "nama_metoderoasting": "coba req updated 3",
+    "status":false
+}
+
+###
+DELETE http://localhost:3500/MetodeRoasting/2
+
